@@ -1,0 +1,44 @@
+html {
+	height: 100%;
+}
+body {
+	background-color: white;
+} 
+h1 {
+	font-family: 'Lexend Deca';
+	font-size: 15px;
+	color: white;
+}
+h2 {
+	font-family: 'Big Shoulders Display';
+	font-size: 15px;
+}
+ .attribution { 
+ 	font-size: 11px; 
+ 	text-align: center; 
+ }
+
+ .attribution a { 
+ 	color: hsl(228, 45%, 44%); 
+ }
+
+ header {
+ 	grid-area:H;
+	background-color:hsl(31, 77%, 52%);
+ }
+
+ section {
+	grid-area:S;
+	background-color: hsl(184, 100%, 22%);
+}
+
+aside {
+	grid-area:A;
+	background-color: hsl(179, 100%, 13%);
+}
+
+ @media (min-width: 375px) {
+	.grid-container {
+		grid-template:
+		"H S A" auto;
+	}
